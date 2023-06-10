@@ -19,21 +19,20 @@ test("Login test demo", async () => {
 
    await page.waitForTimeout(8000);
 
-   // await page.hover("//a[@data-toggle='dropdown']//span[contains(.,'My account')]")
-   // await page.click("(//a[@class='icon-left both dropdown-item'])[8]")
+   //await page.hover("//a[@data-toggle='dropdown']//span[contains(.,'My account')]")
+   //await page.waitForTimeout(8000);
+   await page.click("//a[contains(text(),'Logout')]")
+   //await page.getByRole('link', { name: 'Logout' }).click()
 
-   // await page.waitForTimeout(5000)
+   await context.close()
+   await browser.close()
 
-   // await page.click("a[class='btn btn-primary']")
+   // const newContext = await browser.newContext();
 
-   // await page.waitForTimeout(8000)
+   // const newPage = await newContext.newPage();
+   // await newPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/account")
 
-   const newContext = await browser.newContext();
-
-   const newPage = await newContext.newPage();
-   await newPage.goto("https://ecommerce-playground.lambdatest.io/index.php?route=account/account")
-
-   await newPage.waitForTimeout(6000);
+   //await newPage.waitForTimeout(8000);
 
 
 
