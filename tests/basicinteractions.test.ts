@@ -19,29 +19,37 @@ import { expect, test } from "@playwright/test"
 // })
 
 
-test("Validating the sum of 2 digits",async ({page}) => {
+// test("Validating the sum of 2 digits",async ({page}) => {
 
-  await page.goto("https://www.lambdatest.com/selenium-playground/simple-form-demo")
-  const sum1Int = page.locator("#sum1");
-  const sum2Int = page.locator("#sum2");
+//   await page.goto("https://www.lambdatest.com/selenium-playground/simple-form-demo")
+//   const sum1Int = page.locator("#sum1");
+//   const sum2Int = page.locator("#sum2");
 
-  const getValuesBtn = page.locator("//button[normalize-space()='Get Sum']");
-  let num1 = 45;
-  let num2 = 630;
+//   const getValuesBtn = page.locator("//button[normalize-space()='Get Sum']");
+//   let num1 = 45;
+//   let num2 = 630;
 
-  await sum1Int.type(" "+ num1);
-  await sum2Int.type(" "+ num2);
-  await getValuesBtn.click();
+//   await sum1Int.type(" "+ num1);
+//   await sum2Int.type(" "+ num2);
+//   await getValuesBtn.click();
 
-  const result = page.locator("#addmessage");
+//   const result = page.locator("#addmessage");
 
-  console.log(await result.textContent());
-  let expectedResult = num1 + num2;
-  expect(result).toHaveText(" "+ expectedResult);
-
-
-
-
-
+//   console.log(await result.textContent());
+//   let expectedResult = num1 + num2;
+//   expect(result).toHaveText(" "+ expectedResult);
   
+// })
+
+
+test("Learninga about Checkbox in Playwright",async ({page}) => {
+  
+  await page.goto("https://www.lambdatest.com/selenium-playground/checkbox-demo");
+  const singleCheckBox = page.locator("id=isAgeSelected");
+  expect(singleCheckBox).not.toBeChecked();
+  await singleCheckBox.check();
+  expect(singleCheckBox).toBeChecked();
+
+
+
 })
