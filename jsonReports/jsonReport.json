@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 18923.815999999875
+      "totalTime": 2971.3319999999367
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "/Users/VNK/Documents/Krishnan/learn-playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/login.test.ts"
+          "tests/basicinteractions.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests/login.test.ts",
-      "file": "tests/login.test.ts",
+      "title": "tests/basicinteractions.test.ts",
+      "file": "tests/basicinteractions.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Login test demo",
+          "title": "Validating the sum of 2 digits",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,27 +80,25 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 18490,
+                  "duration": 2123,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "675\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-10T09:49:41.476Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-login-Login-test-demo/test-finished-1.png"
-                    }
-                  ]
+                  "startTime": "2023-06-14T07:47:16.344Z",
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "ef85df6096d4739f2c52-cf0b65859c6f521d730e",
-          "file": "tests/login.test.ts",
-          "line": 3,
+          "id": "53707f89fa4936475b86-693867fac212aa08b9af",
+          "file": "tests/basicinteractions.test.ts",
+          "line": 22,
           "column": 5
         }
       ]
