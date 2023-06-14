@@ -4,8 +4,8 @@ const config: PlaywrightTestConfig = {
     testMatch: ["tests/basicinteractions.test.ts"],
     use: {
         headless: false,
-        screenshot: "only-on-failure",
-        video: "retain-on-failure"
+        screenshot: "on",
+        video: "on"
     },
     retries: 0,
     reporter: [["dot"], ["json", {

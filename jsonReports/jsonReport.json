@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 2971.3319999999367
+      "totalTime": 7942.811000000685
     },
     "preserveOutput": "always",
     "reporter": [
@@ -66,6 +66,59 @@
       "line": 0,
       "specs": [
         {
+          "title": "Basic Interactions Test Demo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4299,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Please enter your Message\n"
+                    },
+                    {
+                      "text": "Before entering values : \n"
+                    },
+                    {
+                      "text": "After entering values: Hi Krishnan\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-06-14T10:10:06.566Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Basic-Interactions-Test-Demo/video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Basic-Interactions-Test-Demo/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53707f89fa4936475b86-539f067b84172164ef09",
+          "file": "tests/basicinteractions.test.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
           "title": "Validating the sum of 2 digits",
           "ok": true,
           "tags": [],
@@ -80,7 +133,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 2123,
+                  "duration": 1442,
                   "errors": [],
                   "stdout": [
                     {
@@ -89,8 +142,19 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-14T07:47:16.344Z",
-                  "attachments": []
+                  "startTime": "2023-06-14T10:10:11.344Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Validating-the-sum-of-2-digits/video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Validating-the-sum-of-2-digits/test-finished-1.png"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
@@ -99,6 +163,49 @@
           "id": "53707f89fa4936475b86-693867fac212aa08b9af",
           "file": "tests/basicinteractions.test.ts",
           "line": 22,
+          "column": 5
+        },
+        {
+          "title": "Learninga about Checkbox in Playwright",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1229,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-06-14T10:10:12.787Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Learninga-about-Checkbox-in-Playwright/video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Learninga-about-Checkbox-in-Playwright/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "53707f89fa4936475b86-88706b953ec93119ec51",
+          "file": "tests/basicinteractions.test.ts",
+          "line": 45,
           "column": 5
         }
       ]
