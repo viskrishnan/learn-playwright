@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 7942.811000000685
+      "totalTime": 3403.0030000023544
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "/Users/VNK/Documents/Krishnan/learn-playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/basicinteractions.test.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests/basicinteractions.test.ts",
-      "file": "tests/basicinteractions.test.ts",
+      "title": "tests/alerts.test.ts",
+      "file": "tests/alerts.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Basic Interactions Test Demo",
+          "title": "handling alerts",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,32 +80,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4299,
+                  "duration": 2407,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Please enter your Message\n"
-                    },
-                    {
-                      "text": "Before entering values : \n"
-                    },
-                    {
-                      "text": "After entering values: Hi Krishnan\n"
+                      "text": "\u001b[36m<ref *1>\u001b[39m Dialog {\n  _events: [Object: null prototype] {},\n  _eventsCount: \u001b[33m0\u001b[39m,\n  _maxListeners: \u001b[33m0\u001b[39m,\n  _connection: \u001b[36m<ref *2>\u001b[39m Connection {\n    _events: [Object: null prototype] { close: \u001b[36m[Function (anonymous)]\u001b[39m },\n    _eventsCount: \u001b[33m1\u001b[39m,\n    _maxListeners: \u001b[90mundefined\u001b[39m,\n    _objects: Map(19) {\n      \u001b[32m''\u001b[39m => \u001b[36m[Root]\u001b[39m,\n      \u001b[32m'android@4d57b77e48deeaf31b0f21aa06550588'\u001b[39m => \u001b[36m[Android]\u001b[39m,\n      \u001b[32m'browser-type@6c7de1d902b0be213fa376ad1cc124f5'\u001b[39m => \u001b[36m[BrowserType]\u001b[39m,\n      \u001b[32m'browser-type@5350e808753d544b371003d08f856414'\u001b[39m => \u001b[36m[BrowserType]\u001b[39m,\n      \u001b[32m'browser-type@ba3906bb8e4134179aa1ed569295b159'\u001b[39m => \u001b[36m[BrowserType]\u001b[39m,\n      \u001b[32m'electron@e7e4d6b150bffc4708a89068d903487b'\u001b[39m => \u001b[36m[Electron]\u001b[39m,\n      \u001b[32m'localUtils'\u001b[39m => \u001b[36m[LocalUtils]\u001b[39m,\n      \u001b[32m'selectors@2a69c71f5684633aba4e41096c654c34'\u001b[39m => \u001b[36m[SelectorsOwner]\u001b[39m,\n      \u001b[32m'Playwright'\u001b[39m => \u001b[36m[Playwright]\u001b[39m,\n      \u001b[32m'browser@513131ea64757e8cc6567a4d47e7adfa'\u001b[39m => \u001b[36m[Browser]\u001b[39m,\n      \u001b[32m'tracing@9a9c5129aeb0850ee8e640d6aadba211'\u001b[39m => \u001b[36m[Tracing]\u001b[39m,\n      \u001b[32m'request-context@ad45b34f5c778a8ecf9dccce88b1f9c9'\u001b[39m => \u001b[36m[APIRequestContext]\u001b[39m,\n      \u001b[32m'browser-context@6dc2f09166b30c642d578562e185ab26'\u001b[39m => \u001b[36m[BrowserContext]\u001b[39m,\n      \u001b[32m'frame@21a91a8d3a6d437af5eb468601bb81a4'\u001b[39m => \u001b[36m[Frame]\u001b[39m,\n      \u001b[32m'page@05a085a8ad4b5467703dd5a18ce747cf'\u001b[39m => \u001b[36m[Page]\u001b[39m,\n      \u001b[32m'artifact@a0135970382608b2fa5458a469eded03'\u001b[39m => \u001b[36m[Artifact]\u001b[39m,\n      \u001b[32m'request@824df87cafbb533038d184a624c715ca'\u001b[39m => \u001b[36m[Request]\u001b[39m,\n      \u001b[32m'response@1eb3839e751f808039cb0716e323d28a'\u001b[39m => \u001b[36m[Response]\u001b[39m,\n      \u001b[32m'dialog@a29758804e7cf167136a47ad66879017'\u001b[39m => \u001b[36m[Circular *1]\u001b[39m\n    },\n    onmessage: \u001b[36m[Function (anonymous)]\u001b[39m,\n    _lastId: \u001b[33m9\u001b[39m,\n    _callbacks: Map(1) { \u001b[33m9\u001b[39m => \u001b[36m[Object]\u001b[39m },\n    _rootObject: Root {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Circular *2]\u001b[39m,\n      _parent: \u001b[90mundefined\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _type: \u001b[32m'Root'\u001b[39m,\n      _guid: \u001b[32m''\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: {},\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: \u001b[90mundefined\u001b[39m,\n      _eventToSubscriptionMapping: Map(0) {},\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _closedErrorMessage: \u001b[90mundefined\u001b[39m,\n    _isRemote: \u001b[33mfalse\u001b[39m,\n    _localUtils: LocalUtils {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Circular *2]\u001b[39m,\n      _parent: \u001b[36m[Root]\u001b[39m,\n      _objects: Map(0) {},\n      _type: \u001b[32m'LocalUtils'\u001b[39m,\n      _guid: \u001b[32m'localUtils'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: {},\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: Map(0) {},\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    toImpl: \u001b[36m[Function (anonymous)]\u001b[39m,\n    _tracingCount: \u001b[33m0\u001b[39m,\n    _instrumentation: {},\n    [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n  },\n  _parent: \u001b[36m<ref *3>\u001b[39m Page {\n    _events: [Object: null prototype] {\n      close: \u001b[36m[Function]\u001b[39m,\n      crash: \u001b[36m[Function]\u001b[39m,\n      dialog: \u001b[36m[AsyncFunction (anonymous)]\u001b[39m\n    },\n    _eventsCount: \u001b[33m3\u001b[39m,\n    _maxListeners: \u001b[33m0\u001b[39m,\n    _connection: \u001b[36m<ref *2>\u001b[39m Connection {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      onmessage: \u001b[36m[Function (anonymous)]\u001b[39m,\n      _lastId: \u001b[33m9\u001b[39m,\n      _callbacks: \u001b[36m[Map]\u001b[39m,\n      _rootObject: \u001b[36m[Root]\u001b[39m,\n      _closedErrorMessage: \u001b[90mundefined\u001b[39m,\n      _isRemote: \u001b[33mfalse\u001b[39m,\n      _localUtils: \u001b[36m[LocalUtils]\u001b[39m,\n      toImpl: \u001b[36m[Function (anonymous)]\u001b[39m,\n      _tracingCount: \u001b[33m0\u001b[39m,\n      _instrumentation: {},\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _parent: BrowserContext {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m2\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[Browser]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _type: \u001b[32m'BrowserContext'\u001b[39m,\n      _guid: \u001b[32m'browser-context@6dc2f09166b30c642d578562e185ab26'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: \u001b[36m[Map]\u001b[39m,\n      _pages: \u001b[36m[Set]\u001b[39m,\n      _routes: [],\n      _browser: \u001b[36m[Browser]\u001b[39m,\n      _browserType: \u001b[36m[BrowserType]\u001b[39m,\n      _bindings: Map(0) {},\n      _timeoutSettings: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _ownerPage: \u001b[90mundefined\u001b[39m,\n      _closedPromise: \u001b[36m[Promise]\u001b[39m,\n      _options: \u001b[36m[Object]\u001b[39m,\n      request: \u001b[36m[APIRequestContext]\u001b[39m,\n      tracing: \u001b[36m[Tracing]\u001b[39m,\n      _backgroundPages: Set(0) {},\n      _serviceWorkers: Set(0) {},\n      _isChromium: \u001b[33mtrue\u001b[39m,\n      _harRecorders: Map(0) {},\n      _closeWasCalled: \u001b[33mfalse\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _objects: Map(2) {\n      \u001b[32m'frame@21a91a8d3a6d437af5eb468601bb81a4'\u001b[39m => \u001b[36m[Frame]\u001b[39m,\n      \u001b[32m'dialog@a29758804e7cf167136a47ad66879017'\u001b[39m => \u001b[36m[Circular *1]\u001b[39m\n    },\n    _type: \u001b[32m'Page'\u001b[39m,\n    _guid: \u001b[32m'page@05a085a8ad4b5467703dd5a18ce747cf'\u001b[39m,\n    _channel: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m12\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _object: \u001b[36m[Circular *3]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _initializer: {\n      mainFrame: \u001b[36m[EventEmitter]\u001b[39m,\n      viewportSize: \u001b[36m[Object]\u001b[39m,\n      isClosed: \u001b[33mfalse\u001b[39m\n    },\n    _logger: \u001b[90mundefined\u001b[39m,\n    _instrumentation: {},\n    _eventToSubscriptionMapping: Map(7) {\n      \u001b[32m'console'\u001b[39m => \u001b[32m'console'\u001b[39m,\n      \u001b[32m'dialog'\u001b[39m => \u001b[32m'dialog'\u001b[39m,\n      \u001b[32m'request'\u001b[39m => \u001b[32m'request'\u001b[39m,\n      \u001b[32m'response'\u001b[39m => \u001b[32m'response'\u001b[39m,\n      \u001b[32m'requestfinished'\u001b[39m => \u001b[32m'requestFinished'\u001b[39m,\n      \u001b[32m'requestfailed'\u001b[39m => \u001b[32m'requestFailed'\u001b[39m,\n      \u001b[32m'filechooser'\u001b[39m => \u001b[32m'fileChooser'\u001b[39m\n    },\n    _browserContext: BrowserContext {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m2\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[Browser]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _type: \u001b[32m'BrowserContext'\u001b[39m,\n      _guid: \u001b[32m'browser-context@6dc2f09166b30c642d578562e185ab26'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: \u001b[36m[Map]\u001b[39m,\n      _pages: \u001b[36m[Set]\u001b[39m,\n      _routes: [],\n      _browser: \u001b[36m[Browser]\u001b[39m,\n      _browserType: \u001b[36m[BrowserType]\u001b[39m,\n      _bindings: Map(0) {},\n      _timeoutSettings: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _ownerPage: \u001b[90mundefined\u001b[39m,\n      _closedPromise: \u001b[36m[Promise]\u001b[39m,\n      _options: \u001b[36m[Object]\u001b[39m,\n      request: \u001b[36m[APIRequestContext]\u001b[39m,\n      tracing: \u001b[36m[Tracing]\u001b[39m,\n      _backgroundPages: Set(0) {},\n      _serviceWorkers: Set(0) {},\n      _isChromium: \u001b[33mtrue\u001b[39m,\n      _harRecorders: Map(0) {},\n      _closeWasCalled: \u001b[33mfalse\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _ownedContext: \u001b[90mundefined\u001b[39m,\n    _mainFrame: Frame {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[Circular *3]\u001b[39m,\n      _objects: Map(0) {},\n      _type: \u001b[32m'Frame'\u001b[39m,\n      _guid: \u001b[32m'frame@21a91a8d3a6d437af5eb468601bb81a4'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: Map(0) {},\n      _eventEmitter: \u001b[36m[EventEmitter]\u001b[39m,\n      _loadStates: \u001b[36m[Set]\u001b[39m,\n      _parentFrame: \u001b[1mnull\u001b[22m,\n      _url: \u001b[32m'https://www.lambdatest.com/selenium-playground/javascript-alert-box-demo'\u001b[39m,\n      _name: \u001b[32m''\u001b[39m,\n      _detached: \u001b[33mfalse\u001b[39m,\n      _childFrames: Set(0) {},\n      _page: \u001b[36m[Circular *3]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _frames: Set(1) { \u001b[36m[Frame]\u001b[39m },\n    _workers: Set(0) {},\n    _closed: \u001b[33mfalse\u001b[39m,\n    _closedOrCrashedRace: ScopedRace {\n      _terminateError: \u001b[90mundefined\u001b[39m,\n      _terminatePromises: Map(0) {}\n    },\n    _viewportSize: { width: \u001b[33m1280\u001b[39m, height: \u001b[33m720\u001b[39m },\n    _routes: [],\n    accessibility: Accessibility { _channel: \u001b[36m[EventEmitter]\u001b[39m },\n    coverage: Coverage { _channel: \u001b[36m[EventEmitter]\u001b[39m },\n    keyboard: Keyboard { _page: \u001b[36m[Circular *3]\u001b[39m },\n    mouse: Mouse { _page: \u001b[36m[Circular *3]\u001b[39m },\n    request: APIRequestContext {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[BrowserContext]\u001b[39m,\n      _objects: Map(0) {},\n      _type: \u001b[32m'APIRequestContext'\u001b[39m,\n      _guid: \u001b[32m'request-context@ad45b34f5c778a8ecf9dccce88b1f9c9'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: Map(0) {},\n      _request: \u001b[90mundefined\u001b[39m,\n      _tracing: \u001b[36m[Tracing]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    touchscreen: Touchscreen { _page: \u001b[36m[Circular *3]\u001b[39m },\n    _bindings: Map(0) {},\n    _timeoutSettings: TimeoutSettings {\n      _parent: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _defaultTimeout: \u001b[90mundefined\u001b[39m,\n      _defaultNavigationTimeout: \u001b[90mundefined\u001b[39m\n    },\n    _video: Video {\n      _artifact: \u001b[36m[Promise]\u001b[39m,\n      _artifactReadyPromise: \u001b[36m[ManualPromise]\u001b[39m,\n      _isRemote: \u001b[33mfalse\u001b[39m\n    },\n    _opener: \u001b[1mnull\u001b[22m,\n    [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n  },\n  _objects: Map(0) {},\n  _type: \u001b[32m'Dialog'\u001b[39m,\n  _guid: \u001b[32m'dialog@a29758804e7cf167136a47ad66879017'\u001b[39m,\n  _channel: EventEmitter {\n    _events: [Object: null prototype] {},\n    _eventsCount: \u001b[33m0\u001b[39m,\n    _maxListeners: \u001b[90mundefined\u001b[39m,\n    _object: \u001b[36m[Circular *1]\u001b[39m,\n    [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n  },\n  _initializer: {\n    page: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m12\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _object: \u001b[36m[Page]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    type: \u001b[32m'prompt'\u001b[39m,\n    message: \u001b[32m'Please enter your name'\u001b[39m,\n    defaultValue: \u001b[32m'Enter name'\u001b[39m\n  },\n  _logger: \u001b[90mundefined\u001b[39m,\n  _instrumentation: {},\n  _eventToSubscriptionMapping: Map(0) {},\n  _page: \u001b[36m<ref *3>\u001b[39m Page {\n    _events: [Object: null prototype] {\n      close: \u001b[36m[Function]\u001b[39m,\n      crash: \u001b[36m[Function]\u001b[39m,\n      dialog: \u001b[36m[AsyncFunction (anonymous)]\u001b[39m\n    },\n    _eventsCount: \u001b[33m3\u001b[39m,\n    _maxListeners: \u001b[33m0\u001b[39m,\n    _connection: \u001b[36m<ref *2>\u001b[39m Connection {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m1\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      onmessage: \u001b[36m[Function (anonymous)]\u001b[39m,\n      _lastId: \u001b[33m9\u001b[39m,\n      _callbacks: \u001b[36m[Map]\u001b[39m,\n      _rootObject: \u001b[36m[Root]\u001b[39m,\n      _closedErrorMessage: \u001b[90mundefined\u001b[39m,\n      _isRemote: \u001b[33mfalse\u001b[39m,\n      _localUtils: \u001b[36m[LocalUtils]\u001b[39m,\n      toImpl: \u001b[36m[Function (anonymous)]\u001b[39m,\n      _tracingCount: \u001b[33m0\u001b[39m,\n      _instrumentation: {},\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _parent: BrowserContext {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m2\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[Browser]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _type: \u001b[32m'BrowserContext'\u001b[39m,\n      _guid: \u001b[32m'browser-context@6dc2f09166b30c642d578562e185ab26'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: \u001b[36m[Map]\u001b[39m,\n      _pages: \u001b[36m[Set]\u001b[39m,\n      _routes: [],\n      _browser: \u001b[36m[Browser]\u001b[39m,\n      _browserType: \u001b[36m[BrowserType]\u001b[39m,\n      _bindings: Map(0) {},\n      _timeoutSettings: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _ownerPage: \u001b[90mundefined\u001b[39m,\n      _closedPromise: \u001b[36m[Promise]\u001b[39m,\n      _options: \u001b[36m[Object]\u001b[39m,\n      request: \u001b[36m[APIRequestContext]\u001b[39m,\n      tracing: \u001b[36m[Tracing]\u001b[39m,\n      _backgroundPages: Set(0) {},\n      _serviceWorkers: Set(0) {},\n      _isChromium: \u001b[33mtrue\u001b[39m,\n      _harRecorders: Map(0) {},\n      _closeWasCalled: \u001b[33mfalse\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _objects: Map(2) {\n      \u001b[32m'frame@21a91a8d3a6d437af5eb468601bb81a4'\u001b[39m => \u001b[36m[Frame]\u001b[39m,\n      \u001b[32m'dialog@a29758804e7cf167136a47ad66879017'\u001b[39m => \u001b[36m[Circular *1]\u001b[39m\n    },\n    _type: \u001b[32m'Page'\u001b[39m,\n    _guid: \u001b[32m'page@05a085a8ad4b5467703dd5a18ce747cf'\u001b[39m,\n    _channel: EventEmitter {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m12\u001b[39m,\n      _maxListeners: \u001b[90mundefined\u001b[39m,\n      _object: \u001b[36m[Circular *3]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _initializer: {\n      mainFrame: \u001b[36m[EventEmitter]\u001b[39m,\n      viewportSize: \u001b[36m[Object]\u001b[39m,\n      isClosed: \u001b[33mfalse\u001b[39m\n    },\n    _logger: \u001b[90mundefined\u001b[39m,\n    _instrumentation: {},\n    _eventToSubscriptionMapping: Map(7) {\n      \u001b[32m'console'\u001b[39m => \u001b[32m'console'\u001b[39m,\n      \u001b[32m'dialog'\u001b[39m => \u001b[32m'dialog'\u001b[39m,\n      \u001b[32m'request'\u001b[39m => \u001b[32m'request'\u001b[39m,\n      \u001b[32m'response'\u001b[39m => \u001b[32m'response'\u001b[39m,\n      \u001b[32m'requestfinished'\u001b[39m => \u001b[32m'requestFinished'\u001b[39m,\n      \u001b[32m'requestfailed'\u001b[39m => \u001b[32m'requestFailed'\u001b[39m,\n      \u001b[32m'filechooser'\u001b[39m => \u001b[32m'fileChooser'\u001b[39m\n    },\n    _browserContext: BrowserContext {\n      _events: \u001b[36m[Object: null prototype]\u001b[39m,\n      _eventsCount: \u001b[33m2\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[Browser]\u001b[39m,\n      _objects: \u001b[36m[Map]\u001b[39m,\n      _type: \u001b[32m'BrowserContext'\u001b[39m,\n      _guid: \u001b[32m'browser-context@6dc2f09166b30c642d578562e185ab26'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: \u001b[36m[Map]\u001b[39m,\n      _pages: \u001b[36m[Set]\u001b[39m,\n      _routes: [],\n      _browser: \u001b[36m[Browser]\u001b[39m,\n      _browserType: \u001b[36m[BrowserType]\u001b[39m,\n      _bindings: Map(0) {},\n      _timeoutSettings: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _ownerPage: \u001b[90mundefined\u001b[39m,\n      _closedPromise: \u001b[36m[Promise]\u001b[39m,\n      _options: \u001b[36m[Object]\u001b[39m,\n      request: \u001b[36m[APIRequestContext]\u001b[39m,\n      tracing: \u001b[36m[Tracing]\u001b[39m,\n      _backgroundPages: Set(0) {},\n      _serviceWorkers: Set(0) {},\n      _isChromium: \u001b[33mtrue\u001b[39m,\n      _harRecorders: Map(0) {},\n      _closeWasCalled: \u001b[33mfalse\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _ownedContext: \u001b[90mundefined\u001b[39m,\n    _mainFrame: Frame {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[Circular *3]\u001b[39m,\n      _objects: Map(0) {},\n      _type: \u001b[32m'Frame'\u001b[39m,\n      _guid: \u001b[32m'frame@21a91a8d3a6d437af5eb468601bb81a4'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: Map(0) {},\n      _eventEmitter: \u001b[36m[EventEmitter]\u001b[39m,\n      _loadStates: \u001b[36m[Set]\u001b[39m,\n      _parentFrame: \u001b[1mnull\u001b[22m,\n      _url: \u001b[32m'https://www.lambdatest.com/selenium-playground/javascript-alert-box-demo'\u001b[39m,\n      _name: \u001b[32m''\u001b[39m,\n      _detached: \u001b[33mfalse\u001b[39m,\n      _childFrames: Set(0) {},\n      _page: \u001b[36m[Circular *3]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    _frames: Set(1) { \u001b[36m[Frame]\u001b[39m },\n    _workers: Set(0) {},\n    _closed: \u001b[33mfalse\u001b[39m,\n    _closedOrCrashedRace: ScopedRace {\n      _terminateError: \u001b[90mundefined\u001b[39m,\n      _terminatePromises: Map(0) {}\n    },\n    _viewportSize: { width: \u001b[33m1280\u001b[39m, height: \u001b[33m720\u001b[39m },\n    _routes: [],\n    accessibility: Accessibility { _channel: \u001b[36m[EventEmitter]\u001b[39m },\n    coverage: Coverage { _channel: \u001b[36m[EventEmitter]\u001b[39m },\n    keyboard: Keyboard { _page: \u001b[36m[Circular *3]\u001b[39m },\n    mouse: Mouse { _page: \u001b[36m[Circular *3]\u001b[39m },\n    request: APIRequestContext {\n      _events: [Object: null prototype] {},\n      _eventsCount: \u001b[33m0\u001b[39m,\n      _maxListeners: \u001b[33m0\u001b[39m,\n      _connection: \u001b[36m[Connection]\u001b[39m,\n      _parent: \u001b[36m[BrowserContext]\u001b[39m,\n      _objects: Map(0) {},\n      _type: \u001b[32m'APIRequestContext'\u001b[39m,\n      _guid: \u001b[32m'request-context@ad45b34f5c778a8ecf9dccce88b1f9c9'\u001b[39m,\n      _channel: \u001b[36m[EventEmitter]\u001b[39m,\n      _initializer: \u001b[36m[Object]\u001b[39m,\n      _logger: \u001b[90mundefined\u001b[39m,\n      _instrumentation: {},\n      _eventToSubscriptionMapping: Map(0) {},\n      _request: \u001b[90mundefined\u001b[39m,\n      _tracing: \u001b[36m[Tracing]\u001b[39m,\n      [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n    },\n    touchscreen: Touchscreen { _page: \u001b[36m[Circular *3]\u001b[39m },\n    _bindings: Map(0) {},\n    _timeoutSettings: TimeoutSettings {\n      _parent: \u001b[36m[TimeoutSettings]\u001b[39m,\n      _defaultTimeout: \u001b[90mundefined\u001b[39m,\n      _defaultNavigationTimeout: \u001b[90mundefined\u001b[39m\n    },\n    _video: Video {\n      _artifact: \u001b[36m[Promise]\u001b[39m,\n      _artifactReadyPromise: \u001b[36m[ManualPromise]\u001b[39m,\n      _isRemote: \u001b[33mfalse\u001b[39m\n    },\n    _opener: \u001b[1mnull\u001b[22m,\n    [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n  },\n  [\u001b[32mSymbol(kCapture)\u001b[39m]: \u001b[33mfalse\u001b[39m\n}\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-14T10:10:06.566Z",
+                  "startTime": "2023-06-15T06:43:52.424Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Basic-Interactions-Test-Demo/video.webm"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-alerts-handling-alerts/video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Basic-Interactions-Test-Demo/test-finished-1.png"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-alerts-handling-alerts/test-finished-1.png"
                     }
                   ]
                 }
@@ -113,99 +107,9 @@
               "status": "expected"
             }
           ],
-          "id": "53707f89fa4936475b86-539f067b84172164ef09",
-          "file": "tests/basicinteractions.test.ts",
+          "id": "addb81fc64a6c6200bbb-5a0babe36829e55e67b9",
+          "file": "tests/alerts.test.ts",
           "line": 3,
-          "column": 5
-        },
-        {
-          "title": "Validating the sum of 2 digits",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 1442,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "675\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-06-14T10:10:11.344Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Validating-the-sum-of-2-digits/video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Validating-the-sum-of-2-digits/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "53707f89fa4936475b86-693867fac212aa08b9af",
-          "file": "tests/basicinteractions.test.ts",
-          "line": 22,
-          "column": 5
-        },
-        {
-          "title": "Learninga about Checkbox in Playwright",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 1229,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-06-14T10:10:12.787Z",
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Learninga-about-Checkbox-in-Playwright/video.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-basicinteractions-Learninga-about-Checkbox-in-Playwright/test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "53707f89fa4936475b86-88706b953ec93119ec51",
-          "file": "tests/basicinteractions.test.ts",
-          "line": 45,
           "column": 5
         }
       ]
