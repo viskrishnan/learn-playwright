@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 2660.5800000000745
+      "totalTime": 2816.4180000000633
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "/Users/VNK/Documents/Krishnan/learn-playwright",
         "testIgnore": [],
         "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          "tests/alerts.test.ts"
         ],
         "timeout": 30000
       }
@@ -80,10 +80,10 @@
                 {
                   "workerIndex": 0,
                   "status": "failed",
-                  "duration": 1668,
+                  "duration": 1769,
                   "error": {
                     "message": "page.click: DOMException: Failed to execute 'evaluate' on 'Document': The string '(//button[@data-target='#myModal']' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (<anonymous>:4639:30)\n    at eval (eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:199:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n=========================== logs ===========================\nwaiting for locator('xpath=(//button[@data-target=\\'#myModal\\']')\n============================================================",
-                    "stack": "Error: page.click: DOMException: Failed to execute 'evaluate' on 'Document': The string '(//button[@data-target='#myModal']' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (<anonymous>:4639:30)\n    at eval (eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:199:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n=========================== logs ===========================\nwaiting for locator('xpath=(//button[@data-target=\\'#myModal\\']')\n============================================================\n    at Object.queryAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4639:30)\n    at eval (/Users/VNK/Documents/Krishnan/learn-playwright/eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:199:17)\n    at UtilityScript.<anonymous> (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:1:44)\n    at /Users/VNK/Documents/Krishnan/learn-playwright/tests/alerts.test.ts:36:16",
+                    "stack": "Error: page.click: DOMException: Failed to execute 'evaluate' on 'Document': The string '(//button[@data-target='#myModal']' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (<anonymous>:4639:30)\n    at eval (eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:199:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n=========================== logs ===========================\nwaiting for locator('xpath=(//button[@data-target=\\'#myModal\\']')\n============================================================\n    at Object.queryAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4639:30)\n    at eval (/Users/VNK/Documents/Krishnan/learn-playwright/eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:199:17)\n    at UtilityScript.<anonymous> (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:1:44)\n    at /Users/VNK/Documents/Krishnan/learn-playwright/tests/alerts.test.ts:39:16",
                     "location": {
                       "file": "/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>",
                       "column": 25,
@@ -97,13 +97,13 @@
                         "column": 25,
                         "line": 23
                       },
-                      "message": "Error: page.click: DOMException: Failed to execute 'evaluate' on 'Document': The string '(//button[@data-target='#myModal']' is not a valid XPath expression.\n\n    at Object.queryAll (<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (<anonymous>:4639:30)\n    at eval (eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:199:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n=========================== logs ===========================\nwaiting for locator('xpath=(//button[@data-target=\\'#myModal\\']')\n============================================================\n    at Object.queryAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4639:30)\n    at eval (/Users/VNK/Documents/Krishnan/learn-playwright/eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:199:17)\n    at UtilityScript.<anonymous> (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:1:44)\n    at /Users/VNK/Documents/Krishnan/learn-playwright/tests/alerts.test.ts:36:16"
+                      "message": "Error: page.click: DOMException: Failed to execute 'evaluate' on 'Document': The string '(//button[@data-target='#myModal']' is not a valid XPath expression.\n\n\u001b[2m    at Object.queryAll (<anonymous>:23:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (<anonymous>:4652:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (<anonymous>:4639:30)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:197:30), <anonymous>:4:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:199:17)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2m=========================== logs ===========================\u001b[22m\n\u001b[2mwaiting for locator('xpath=(//button[@data-target=\\'#myModal\\']')\u001b[22m\n\u001b[2m============================================================\u001b[22m\n\u001b[2m    at Object.queryAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:23:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4652:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4639:30)\u001b[22m\n\u001b[2m    at eval (/Users/VNK/Documents/Krishnan/learn-playwright/eval at evaluate (:197:30), <anonymous>:4:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:199:17)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:1:44)\u001b[22m\n\u001b[2m    at /Users/VNK/Documents/Krishnan/learn-playwright/tests/alerts.test.ts:39:16\u001b[22m"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-15T07:42:29.010Z",
+                  "startTime": "2023-06-15T12:19:03.709Z",
                   "attachments": [
                     {
                       "name": "video",
@@ -128,7 +128,7 @@
           ],
           "id": "addb81fc64a6c6200bbb-5a0babe36829e55e67b9",
           "file": "tests/alerts.test.ts",
-          "line": 3,
+          "line": 36,
           "column": 5
         }
       ]
