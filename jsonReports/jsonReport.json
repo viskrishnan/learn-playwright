@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 2816.4180000000633
+      "totalTime": 32490.58900000155
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "/Users/VNK/Documents/Krishnan/learn-playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/alerts.test.ts"
+          "tests/dropdown.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests/alerts.test.ts",
-      "file": "tests/alerts.test.ts",
+      "title": "tests/dropdown.test.ts",
+      "file": "tests/dropdown.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "handling alerts",
+          "title": "handling dropdown",
           "ok": false,
           "tags": [],
           "tests": [
@@ -79,56 +79,51 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 1769,
+                  "status": "timedOut",
+                  "duration": 30001,
                   "error": {
-                    "message": "page.click: DOMException: Failed to execute 'evaluate' on 'Document': The string '(//button[@data-target='#myModal']' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (<anonymous>:4639:30)\n    at eval (eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:199:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n=========================== logs ===========================\nwaiting for locator('xpath=(//button[@data-target=\\'#myModal\\']')\n============================================================",
-                    "stack": "Error: page.click: DOMException: Failed to execute 'evaluate' on 'Document': The string '(//button[@data-target='#myModal']' is not a valid XPath expression.\n    at Object.queryAll (<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (<anonymous>:4639:30)\n    at eval (eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (<anonymous>:199:17)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n=========================== logs ===========================\nwaiting for locator('xpath=(//button[@data-target=\\'#myModal\\']')\n============================================================\n    at Object.queryAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:23:25)\n    at InjectedScript._queryEngineAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4652:49)\n    at InjectedScript.querySelectorAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4639:30)\n    at eval (/Users/VNK/Documents/Krishnan/learn-playwright/eval at evaluate (:197:30), <anonymous>:4:35)\n    at UtilityScript.evaluate (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:199:17)\n    at UtilityScript.<anonymous> (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:1:44)\n    at /Users/VNK/Documents/Krishnan/learn-playwright/tests/alerts.test.ts:39:16",
-                    "location": {
-                      "file": "/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>",
-                      "column": 25,
-                      "line": 23
-                    }
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                   },
                   "errors": [
                     {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
                       "location": {
-                        "file": "/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>",
-                        "column": 25,
-                        "line": 23
+                        "file": "/Users/VNK/Documents/Krishnan/learn-playwright/tests/dropdown.test.ts",
+                        "column": 28,
+                        "line": 24
                       },
-                      "message": "Error: page.click: DOMException: Failed to execute 'evaluate' on 'Document': The string '(//button[@data-target='#myModal']' is not a valid XPath expression.\n\n\u001b[2m    at Object.queryAll (<anonymous>:23:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (<anonymous>:4652:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (<anonymous>:4639:30)\u001b[22m\n\u001b[2m    at eval (eval at evaluate (:197:30), <anonymous>:4:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (<anonymous>:199:17)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (<anonymous>:1:44)\u001b[22m\n\u001b[2m=========================== logs ===========================\u001b[22m\n\u001b[2mwaiting for locator('xpath=(//button[@data-target=\\'#myModal\\']')\u001b[22m\n\u001b[2m============================================================\u001b[22m\n\u001b[2m    at Object.queryAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:23:25)\u001b[22m\n\u001b[2m    at InjectedScript._queryEngineAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4652:49)\u001b[22m\n\u001b[2m    at InjectedScript.querySelectorAll (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:4639:30)\u001b[22m\n\u001b[2m    at eval (/Users/VNK/Documents/Krishnan/learn-playwright/eval at evaluate (:197:30), <anonymous>:4:35)\u001b[22m\n\u001b[2m    at UtilityScript.evaluate (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:199:17)\u001b[22m\n\u001b[2m    at UtilityScript.<anonymous> (/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>:1:44)\u001b[22m\n\u001b[2m    at /Users/VNK/Documents/Krishnan/learn-playwright/tests/alerts.test.ts:39:16\u001b[22m"
+                      "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//span[@class=\\'groupradiobutton block break-words\\']')\n  locator resolved to <span class=\"groupradiobutton block break-words\"></span>\nattempting click action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n\n  22 |     await page.click(\"#printAll\");\n  23 |     const simpleInputField = page.locator(\"//span[@class='groupradiobutton block break-words']\")\n> 24 |     await simpleInputField.click();\n     |                            ^\n  25 |     await simpleInputField.scrollIntoViewIfNeeded();\n  26 |     expect(simpleInputField).toHaveText(\"Washington\")\n  27 |\n\n    at /Users/VNK/Documents/Krishnan/learn-playwright/tests/dropdown.test.ts:24:28"
+                    },
+                    {
+                      "message": "Pending operations:\n  - locator.click at tests/dropdown.test.ts:24:28\n"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-15T12:19:03.709Z",
+                  "startTime": "2023-06-16T08:29:36.323Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-alerts-handling-alerts/video.webm"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-dropdown-handling-dropdown/video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-alerts-handling-alerts/test-failed-1.png"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-dropdown-handling-dropdown/test-failed-1.png"
                     }
-                  ],
-                  "errorLocation": {
-                    "file": "/Users/VNK/Documents/Krishnan/learn-playwright/<anonymous>",
-                    "column": 25,
-                    "line": 23
-                  }
+                  ]
                 }
               ],
               "status": "unexpected"
             }
           ],
-          "id": "addb81fc64a6c6200bbb-5a0babe36829e55e67b9",
-          "file": "tests/alerts.test.ts",
-          "line": 36,
+          "id": "6a3d7e996dd4874286aa-87333c24c46be38bec74",
+          "file": "tests/dropdown.test.ts",
+          "line": 3,
           "column": 5
         }
       ]
