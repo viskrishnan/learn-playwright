@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 32490.58900000155
+      "totalTime": 14879.971000000136
     },
     "preserveOutput": "always",
     "reporter": [
@@ -66,8 +66,8 @@
       "line": 0,
       "specs": [
         {
-          "title": "handling dropdown",
-          "ok": false,
+          "title": "Bootstrap dropdown",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -79,52 +79,34 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30001,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/Users/VNK/Documents/Krishnan/learn-playwright/tests/dropdown.test.ts",
-                        "column": 28,
-                        "line": 24
-                      },
-                      "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//span[@class=\\'groupradiobutton block break-words\\']')\n  locator resolved to <span class=\"groupradiobutton block break-words\"></span>\nattempting click action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n\n  22 |     await page.click(\"#printAll\");\n  23 |     const simpleInputField = page.locator(\"//span[@class='groupradiobutton block break-words']\")\n> 24 |     await simpleInputField.click();\n     |                            ^\n  25 |     await simpleInputField.scrollIntoViewIfNeeded();\n  26 |     expect(simpleInputField).toHaveText(\"Washington\")\n  27 |\n\n    at /Users/VNK/Documents/Krishnan/learn-playwright/tests/dropdown.test.ts:24:28"
-                    },
-                    {
-                      "message": "Pending operations:\n  - locator.click at tests/dropdown.test.ts:24:28\n"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 13320,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-16T08:29:36.323Z",
+                  "startTime": "2023-06-17T00:36:42.774Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-dropdown-handling-dropdown/video.webm"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-dropdown-Bootstrap-dropdown/video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-dropdown-handling-dropdown/test-failed-1.png"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-dropdown-Bootstrap-dropdown/test-finished-1.png"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "6a3d7e996dd4874286aa-87333c24c46be38bec74",
+          "id": "6a3d7e996dd4874286aa-c781b280128f1e621906",
           "file": "tests/dropdown.test.ts",
-          "line": 3,
-          "column": 5
+          "line": 29,
+          "column": 6
         }
       ]
     }
