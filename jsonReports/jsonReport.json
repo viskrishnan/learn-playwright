@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 13205.045000001788
+      "totalTime": 10534.386999994516
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "/Users/VNK/Documents/Krishnan/learn-playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/frames.test.ts"
+          "tests/windows.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests/frames.test.ts",
-      "file": "tests/frames.test.ts",
+      "title": "tests/windows.test.ts",
+      "file": "tests/windows.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Interact with frames",
+          "title": "Interact with Multiple windows popus",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,26 +80,49 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11782,
+                  "duration": 9078,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "No. of frames:  15\n"
+                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
+                    },
+                    {
+                      "text": "Number of pages : 3\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-18T10:45:19.091Z",
+                  "startTime": "2023-06-18T11:19:17.485Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-frames-Interact-with-frames/video.webm"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/video-2.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/video-1.webm"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-frames-Interact-with-frames/test-finished-1.png"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/test-finished-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/test-finished-3.png"
                     }
                   ]
                 }
@@ -107,9 +130,9 @@
               "status": "expected"
             }
           ],
-          "id": "ee77907c2abffffa1fe6-9630d085b8591ad675e7",
-          "file": "tests/frames.test.ts",
-          "line": 3,
+          "id": "98c21ebe87e39c315e15-acd2cdca4908b871dfea",
+          "file": "tests/windows.test.ts",
+          "line": 18,
           "column": 5
         }
       ]
