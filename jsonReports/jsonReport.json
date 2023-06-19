@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 10534.386999994516
+      "totalTime": 9187.91300000064
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "/Users/VNK/Documents/Krishnan/learn-playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/windows.test.ts"
+          "tests/calender.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "tests/windows.test.ts",
-      "file": "tests/windows.test.ts",
+      "title": "tests/calender.test.ts",
+      "file": "tests/calender.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Interact with Multiple windows popus",
+          "title": "validate calender tests",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,49 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9078,
+                  "duration": 4358,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "https://www.lambdatest.com/selenium-playground/window-popup-modal-demo\n"
-                    },
-                    {
-                      "text": "Number of pages : 3\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-18T11:19:17.485Z",
+                  "startTime": "2023-06-19T07:16:18.563Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/video-2.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/video-1.webm"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/video.webm"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-calender-validate-calender-tests/video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/test-finished-1.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/test-finished-2.png"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-windows-Interact-with-Multiple-windows-popus/test-finished-3.png"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-calender-validate-calender-tests/test-finished-1.png"
                     }
                   ]
                 }
@@ -130,9 +103,52 @@
               "status": "expected"
             }
           ],
-          "id": "98c21ebe87e39c315e15-acd2cdca4908b871dfea",
-          "file": "tests/windows.test.ts",
-          "line": 18,
+          "id": "8b6b781e32c609f075b7-4a6e677ad555cebccd7e",
+          "file": "tests/calender.test.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "validate start date and end date",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 3158,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-06-19T07:16:23.930Z",
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-calender-validate-start-date-and-end-date/video.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-calender-validate-start-date-and-end-date/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b6b781e32c609f075b7-a5d4ffc7899f2203b5bf",
+          "file": "tests/calender.test.ts",
+          "line": 12,
           "column": 5
         }
       ]
