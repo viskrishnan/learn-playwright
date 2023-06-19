@@ -1,7 +1,7 @@
 import { PlaywrightTestConfig, devices } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-    testMatch: ["tests/calender.test.ts"],
+    testMatch: ["tests/uploadDownload.test.ts"],
     use: {
         headless: false,
         screenshot: "on",
