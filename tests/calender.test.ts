@@ -14,7 +14,7 @@ test("validate start date and end date",async ({page}) => {
     page.goto("https://www.lambdatest.com/selenium-playground/bootstrap-date-picker-demo")
     await page.locator("//input[@placeholder='Start date']").click();
 
-    const thisMonth = moment(dateToSelect,"MMMM YYYY").isBefore()
-    console.log("this month ? " + thisMonth)
+    //const thisMonth = moment(dateToSelect,"MMMM YYYY").isBefore()
+    //console.log("this month ? " + thisMonth)
 
 })
