@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 10095.716999998316
+      "totalTime": 7794.20900000073
     },
     "preserveOutput": "always",
     "reporter": [
@@ -66,7 +66,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Download files",
+          "title": "Upload files",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,22 +80,26 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8365,
+                  "duration": 6203,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "\u001b[33mtrue\u001b[39m\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-19T07:46:52.379Z",
+                  "startTime": "2023-06-19T08:10:34.692Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-uploadDownload-Download-files/video.webm"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-uploadDownload-Upload-files/video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-uploadDownload-Download-files/test-finished-1.png"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-uploadDownload-Upload-files/test-finished-1.png"
                     }
                   ]
                 }
@@ -103,10 +107,10 @@
               "status": "expected"
             }
           ],
-          "id": "bff505410ff9353f2355-39cc9ef43d68448ab626",
+          "id": "bff505410ff9353f2355-8e4e25e3d43cb5a7928a",
           "file": "tests/uploadDownload.test.ts",
-          "line": 3,
-          "column": 5
+          "line": 18,
+          "column": 6
         }
       ]
     }
