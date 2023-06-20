@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 7794.20900000073
+      "totalTime": 34715.0549999997
     },
     "preserveOutput": "always",
     "reporter": [
@@ -47,7 +47,7 @@
         "testDir": "/Users/VNK/Documents/Krishnan/learn-playwright",
         "testIgnore": [],
         "testMatch": [
-          "tests/uploadDownload.test.ts"
+          "pomtest/addToTest.test.ts"
         ],
         "timeout": 30000
       }
@@ -60,14 +60,14 @@
   },
   "suites": [
     {
-      "title": "tests/uploadDownload.test.ts",
-      "file": "tests/uploadDownload.test.ts",
+      "title": "pomtest/addToTest.test.ts",
+      "file": "pomtest/addToTest.test.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Upload files",
-          "ok": true,
+          "title": "Add to cart test_03",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -79,38 +79,52 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 6203,
-                  "errors": [],
-                  "stdout": [
+                  "status": "timedOut",
+                  "duration": 29999,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
                     {
-                      "text": "\u001b[33mtrue\u001b[39m\n"
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/Users/VNK/Documents/Krishnan/learn-playwright/pages/specialHotPage.ts",
+                        "column": 21,
+                        "line": 20
+                      },
+                      "message": "Error: locator.waitFor: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//a[.=\\'View Cart \\']') to be visible\n============================================================\n\n   at pages/specialHotPage.ts:20\n\n  18 |     async isToastVisible(){\n  19 |         const toast = this.page.locator(\"//a[.='View Cart ']\");\n> 20 |         await toast.waitFor({state: \"visible\"})\n     |                     ^\n  21 |         return toast;\n  22 |     }\n  23 |\n\n    at SpecialHotPage.isToastVisible (/Users/VNK/Documents/Krishnan/learn-playwright/pages/specialHotPage.ts:20:21)\n    at /Users/VNK/Documents/Krishnan/learn-playwright/pomtest/addToTest.test.ts:42:48"
+                    },
+                    {
+                      "message": "Pending operations:\n  - locator.waitFor at pages/specialHotPage.ts:20:21\n"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-19T08:10:34.692Z",
+                  "startTime": "2023-06-20T11:08:01.552Z",
                   "attachments": [
                     {
                       "name": "video",
                       "contentType": "video/webm",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-uploadDownload-Upload-files/video.webm"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/pomtest-addToTest-Add-to-cart-test-03/video.webm"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/tests-uploadDownload-Upload-files/test-finished-1.png"
+                      "path": "/Users/VNK/Documents/Krishnan/learn-playwright/test-results/pomtest-addToTest-Add-to-cart-test-03/test-failed-1.png"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "bff505410ff9353f2355-8e4e25e3d43cb5a7928a",
-          "file": "tests/uploadDownload.test.ts",
-          "line": 18,
-          "column": 6
+          "id": "94cb53f722ccc560036b-b36b84c22d99049d6b45",
+          "file": "pomtest/addToTest.test.ts",
+          "line": 34,
+          "column": 5
         }
       ]
     }

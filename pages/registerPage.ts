@@ -12,7 +12,7 @@ export default class RegisterPage{
     }
 
     async enterLastName(lastname: string){
-        await this.page.locator("#idinput-lastname")
+        await this.page.locator("#input-lastname")
         .type(lastname)
     }
 
@@ -37,11 +37,11 @@ export default class RegisterPage{
     }
     
     async isSubscribeChecked(){
-        return this.page.locator("input-newsletter-no").isChecked();
+        return this.page.locator("#input-newsletter-no").isChecked();
     }
 
     async checkTermsandConditions(){
-        await this.page.click("input-agree")
+        await this.page.click("//label[@for='input-agree']");
     }
 
     async clickContinue(){

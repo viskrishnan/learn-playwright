@@ -4,13 +4,19 @@ export default class LoginPage {
 
     constructor(public page: Page) {}
 
+    async login(email: string ,password: string){
+        await this.enterEmailAddr(email)
+        await this.enterLoginPassword(password)
+        await this.clickLoginButton()
+    }
+
     async enterEmailAddr(emailaddress: string){
         await this.page.locator("#input-email")
         .type(emailaddress)
     }
 
     async enterLoginPassword(loginPassword: string){
-        await this.page.locator("input-password")
+        await this.page.locator("//input[@id='input-password']")
         .type(loginPassword)
     }
 
