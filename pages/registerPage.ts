@@ -37,19 +37,19 @@ export default class RegisterPage{
     }
     
     async isSubscribeChecked(){
-        return await this.page.locator("input-newsletter-no");
+        return this.page.locator("input-newsletter-no").isChecked();
     }
 
     async checkTermsandConditions(){
-        await this.page.locator("input-agree")
-        .click();
+        await this.page.click("input-agree")
     }
 
     async clickContinue(){
-        
-        await this.page.locator("//input[@value='Continue']").click()    
+        await Promise.all([
+            this.page.waitForTimeout(5000),
+            this.page.click("//input[@value='Continue']") 
+        ])
+   
     }
-
-
 
 }
