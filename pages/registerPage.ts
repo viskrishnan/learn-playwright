@@ -37,7 +37,7 @@ export default class RegisterPage{
     }
     
     async isSubscribeChecked(){
-        return await this.page.locator("input-newsletter-no").isChecked();
+        return await this.page.locator("input-newsletter-no");
     }
 
     async checkTermsandConditions(){
