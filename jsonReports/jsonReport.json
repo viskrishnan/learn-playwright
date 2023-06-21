@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "totalTime": 34715.0549999997
+      "totalTime": 35116.96999999881
     },
     "preserveOutput": "always",
     "reporter": [
@@ -80,7 +80,7 @@
                 {
                   "workerIndex": 0,
                   "status": "timedOut",
-                  "duration": 29999,
+                  "duration": 30002,
                   "error": {
                     "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
                   },
@@ -91,19 +91,19 @@
                     {
                       "location": {
                         "file": "/Users/VNK/Documents/Krishnan/learn-playwright/pages/specialHotPage.ts",
-                        "column": 21,
-                        "line": 20
+                        "column": 25,
+                        "line": 8
                       },
-                      "message": "Error: locator.waitFor: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//a[.=\\'View Cart \\']') to be visible\n============================================================\n\n   at pages/specialHotPage.ts:20\n\n  18 |     async isToastVisible(){\n  19 |         const toast = this.page.locator(\"//a[.='View Cart ']\");\n> 20 |         await toast.waitFor({state: \"visible\"})\n     |                     ^\n  21 |         return toast;\n  22 |     }\n  23 |\n\n    at SpecialHotPage.isToastVisible (/Users/VNK/Documents/Krishnan/learn-playwright/pages/specialHotPage.ts:20:21)\n    at /Users/VNK/Documents/Krishnan/learn-playwright/pomtest/addToTest.test.ts:42:48"
+                      "message": "Error: page.hover: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//div[@class=\\'image\\']/a')\n============================================================\n\n   at pages/specialHotPage.ts:8\n\n   6 |\n   7 |     async addFirstProductToCart(){\n>  8 |         await this.page.hover(\"//div[@class='image']/a\",\n     |                         ^\n   9 |         {\n  10 |             strict: false\n  11 |         });\n\n    at SpecialHotPage.addFirstProductToCart (/Users/VNK/Documents/Krishnan/learn-playwright/pages/specialHotPage.ts:8:25)\n    at /Users/VNK/Documents/Krishnan/learn-playwright/pomtest/addToTest.test.ts:42:26"
                     },
                     {
-                      "message": "Pending operations:\n  - locator.waitFor at pages/specialHotPage.ts:20:21\n"
+                      "message": "Pending operations:\n  - page.hover at pages/specialHotPage.ts:8:25\n"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-06-20T11:08:01.552Z",
+                  "startTime": "2023-06-20T11:10:09.772Z",
                   "attachments": [
                     {
                       "name": "video",

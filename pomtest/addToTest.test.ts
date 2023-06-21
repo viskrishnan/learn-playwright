@@ -39,6 +39,7 @@ test("Add to cart test_03",async ({page,baseURL}) => {
     await page.goto(`${baseURL}route=account/login`)
     await login.login(newEmail,Password)
     await homePage.clickOnSpecialHotMenu();
+    await specialHotPage.addFirstProductToCart()
     const isCartVisible = await specialHotPage.isToastVisible()
     expect(isCartVisible).toBeVisible()
 
